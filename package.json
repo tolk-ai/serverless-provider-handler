@@ -1,0 +1,19 @@
+{
+  "name": "serverless-provider-handler",
+  "version": "1.0.0",
+  "main": "serverless-provider-handler.js",
+  "license": "MIT",
+  "devDependencies": {
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "envs": [
+      "mocha"
+    ],
+    "space": 2,
+    "prettier": true
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
