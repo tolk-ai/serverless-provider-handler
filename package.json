@@ -1,6 +1,6 @@
 {
   "name": "serverless-provider-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "serverless-provider-handler.js",
   "license": "MIT",
   "devDependencies": {
