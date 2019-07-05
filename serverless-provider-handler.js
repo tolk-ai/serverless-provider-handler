@@ -5,6 +5,7 @@ const awsSpecific_ = fn =>
     R.prop('body'),
     JSON.parse,
     fn,
+    x => new Promise(resolve => resolve(x)),
     R.then(JSON.stringify),
     R.then(
       R.applySpec({
@@ -18,6 +19,7 @@ const kubelessSpecific_ = fn =>
   R.pipe(
     R.prop('data'),
     fn,
+    x => new Promise(resolve => resolve(x)),
     R.then(
       R.applySpec({
         status: R.always(200),
