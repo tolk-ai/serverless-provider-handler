@@ -19,13 +19,7 @@ const kubelessSpecific_ = fn =>
   R.pipe(
     R.prop('data'),
     fn,
-    x => new Promise(resolve => resolve(x)),
-    R.then(
-      R.applySpec({
-        status: R.always(200),
-        data: R.identity
-      })
-    )
+    x => new Promise(resolve => resolve(x))
   );
 
 const serverlessHandler = fn =>
